@@ -177,11 +177,11 @@ section {
   }
 }
 @keyframes words{
-  0%,50%{
+  0%{
     content: 'Web Developer';
   }
-  51%,100%{
-    content: 'AWS Cloud practioner';
+  100%{
+    content: 'Web Developer';
   }
 }
 
@@ -480,5 +480,25 @@ section {
   }
   .projects-container {
     grid-template-columns: repeat(1,1fr);
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home-img img,
+  .about-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar a {
+    margin: 1rem;
+    font-size: 1.4rem;
   }
 }
