@@ -151,7 +151,7 @@ section {
   background: var(--main-color);
   border-radius: 4rem;
   font-size: 1.6rem;
-  color: white;
+  color: black;
   border: 2px solid transparent;
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -171,7 +171,7 @@ section {
   position: relative;
 }
 .animated-text span::before {
-  content: 'Web Developer';
+  content: '';
   color: var(--main-color);
   animation: words 9s infinite;
 }
@@ -192,7 +192,7 @@ section {
 }
 @keyframes words{
   0%{
-    content: 'Web Developer';
+    content: 'Java Developer';
   }
   100%{
     content: 'Web Developer';
@@ -266,7 +266,7 @@ section {
   margin: 2rem 0 3rem;
 }
 .about-content .animated-text span::before {
-  content: 'Web Developer';
+  content: '';
   color: var(--main-color);
   animation: words 9s infinite;
 }
@@ -547,27 +547,27 @@ section {
     height: 300px;
   }
   .skills .sun {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .skills .orbit {
     border-width: 1px;
   }
   .skills .planet {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   .skills .heading {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
-  .orbit1 { width: 40px; height: 40px; animation-duration: 6s; }
-  .orbit2 { width: 70px; height: 70px; animation-duration: 7s; }
-  .orbit3 { width: 100px; height: 100px; animation-duration: 8s; }
-  .orbit4 { width: 130px; height: 130px; animation-duration: 9s; }
-  .orbit5 { width: 160px; height: 160px; animation-duration: 10s; }
-  .orbit6 { width: 190px; height: 190px; animation-duration: 11s; }
-  .orbit7 { width: 220px; height: 220px; animation-duration: 12s; }
-  .orbit8 { width: 250px; height: 250px; animation-duration: 13s; }
-  .orbit9 { width: 280px; height: 280px; animation-duration: 14s; }
+  .orbit1 { width: 100px; height: 100px; animation-duration: 6s; }
+  .orbit2 { width: 130px; height: 130px; animation-duration: 7s; }
+  .orbit3 { width: 160px; height: 160px; animation-duration: 8s; }
+  .orbit4 { width: 190px; height: 190px; animation-duration: 9s; }
+  .orbit5 { width: 220px; height: 220px; animation-duration: 10s; }
+  .orbit6 { width: 250px; height: 250px; animation-duration: 11s; }
+  .orbit7 { width: 280px; height: 280px; animation-duration: 12s; }
+  .orbit8 { width: 310px; height: 310px; animation-duration: 13s; }
+  .orbit9 { width: 340px; height: 340px; animation-duration: 14s; }
 }
 
 .projects {
@@ -584,17 +584,13 @@ section {
   align-items: center;
   gap: 3rem;
 }
-.project-box::-webkit-scrollbar{
-  display: none;
-}
 .project-box {
-  overflow: auto;
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   background-color: transparent;
-  padding: 30 px;
+  padding: 3em 5em;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 15px rgba(1, 254, 250, 0.782);
   color: white;
@@ -605,14 +601,31 @@ section {
 .project-box:hover {
   transform: scale(1.03);
 }
+.tech-stack{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.tech-stack span {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.tech-stack span:hover {
+  background: #00ffee;
+  color: #000;
+}
 
 .project-buttons {
   display: flex;
   align-items: center;
-  height: 80px;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 .project-buttons .btn {
   padding: 1rem 2rem;
@@ -635,10 +648,8 @@ section {
   display: flex;
   flex-direction: column;
   text-align: left;
-  max-height: 200px;
   justify-content: center;
   align-items: baseline;
-  padding: 5em;
 }
 .project-info h4 {
   font-size: 2.5rem;
@@ -648,7 +659,6 @@ section {
 .project-info p{
   font-size: 1.6rem;
   font-weight: 500;
-  max-height: 100px;
   margin: auto;
 }
 .contact h2 {
